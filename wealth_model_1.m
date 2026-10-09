@@ -1,3 +1,13 @@
+% Wealth Distribution Model
+% Agent-based simulation with 500 agents, each starting with 10 units of wealth.
+% In each period, every agent with positive starting wealth transfers one unit
+% to a randomly selected other agent.
+% Transfers are applied simultaneously at the end of each period.
+% The simulation runs for 1,000 periods and plots wealth distributions
+% at periods 0, 100 and 1,000.
+% Initial and final total wealth are calculated to check wealth conservation.
+% A fixed random seed makes the simulation reproducible.
+
 rng(1);
 N = 500;
 wealth = 10 * ones(1, N); %where the ones(1,N) creates a vector with 1 in each place until it reaches the number N
