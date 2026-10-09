@@ -1,3 +1,15 @@
+% Limit Order Book with Zero-Intelligence Constrained Traders
+% Simulates a market with five buyers and five sellers.
+% Buyers submit random bids no higher than their individual valuations.
+% Sellers submit random asks no lower than their individual costs.
+% Matching orders execute at the resting order's price.
+% Each trader can complete one transaction and then becomes inactive.
+% The simulation records trader IDs, transaction prices and trade surplus.
+% Market efficiency is calculated as realised surplus divided by
+% the maximum achievable surplus, expressed as a percentage.
+% A fixed random seed makes the simulation reproducible.
+
+
 clear; close all; clc
 rng(1)
 
