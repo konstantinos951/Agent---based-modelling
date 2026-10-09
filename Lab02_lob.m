@@ -1,3 +1,13 @@
+% Minimal Limit Order Book
+% Simulates 400 incoming orders with equal probabilities of buying and selling.
+% Order prices are generated around a reference price, initially set to 100
+% and subsequently updated to the most recent transaction price.
+% A buy order trades when its price meets or exceeds the lowest available ask.
+% A sell order trades when its price meets or falls below the highest available bid.
+% Transactions execute at the resting order's price.
+% Unmatched orders remain in the book, and transaction prices are plotted.
+% A fixed random seed makes the simulation reproducible.
+
 clear; close all; clc
 rng(1)
 
